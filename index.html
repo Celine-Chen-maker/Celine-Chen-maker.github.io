@@ -86,19 +86,65 @@
             margin: 20px 0;
         }
 
-        /* ===== Q&A Styles ===== */
+        .solution-box {
+            background: #0d0d0d;
+            border: 1px solid #2a2a2a;
+            border-radius: 24px;
+            padding: 24px 20px;
+            margin: 28px 0;
+        }
+        .solution-box h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .solution-box .solution-sub {
+            color: #aaa;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .solution-step {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 18px;
+            align-items: flex-start;
+        }
+        .solution-step .num {
+            background: #e03a3a;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85rem;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .solution-step .step-content {
+            color: #ddd;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .solution-step .step-content strong {
+            color: #fff;
+            font-weight: 500;
+        }
+
         .faq-section {
-            margin: 36px 0 24px;
+            margin: 28px 0 24px;
         }
         .faq-section h2 {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 6px;
         }
         .faq-section .faq-sub {
             color: #aaa;
             font-size: 0.95rem;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
         .faq-item {
             border-bottom: 1px solid #1e1e1e;
@@ -112,7 +158,7 @@
             font-size: 1rem;
             font-weight: 500;
             color: #f0f0f0;
-            padding: 16px 8px 16px 0;
+            padding: 14px 8px 14px 0;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -184,15 +230,48 @@
     <!-- Google Form Embed -->
     <div style="background-color:#0d0d0d; border-radius:32px; padding:20px; margin: 20px 0;">
         <h3 style="margin-bottom: 16px;">✍️ Be their voice — sign the petition</h3>
+        <p style="color:#aaa; font-size:0.9rem; margin-bottom:18px;">
+            ⬇️ Scroll down for Q&amp;A and what happens after you sign.
+        </p>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfM7Mv1pj6SawmfEN539KnBrnDSh5gTj9s-SS4asMl6jbBddw/viewform?embedded=true" width="100%" height="650" style="border-radius: 20px;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 
-    <!-- ===== Q&A Section ===== -->
+    <!-- ===== SOLUTION PATH ===== -->
+    <div class="solution-box">
+        <h2>🛠️ How to actually solve this</h2>
+        <div class="solution-sub">A 3‑step path from awareness to action</div>
+
+        <div class="solution-step">
+            <div class="num">1</div>
+            <div class="step-content">
+                <strong>Push the USDA</strong> — Federal policy can ban chick culling or mandate in-ovo sexing. Europe is already moving. The US needs public pressure to catch up.
+            </div>
+        </div>
+
+        <div class="solution-step">
+            <div class="num">2</div>
+            <div class="step-content">
+                <strong>Push large egg corporations</strong> — Companies like Cal-Maine Foods buy billions of eggs. If they adopt in-ovo sexing, the entire supply chain shifts. Consumer pressure works.
+            </div>
+        </div>
+
+        <div class="solution-step">
+            <div class="num">3</div>
+            <div class="step-content">
+                <strong>Lease the machines to farms</strong> — The equipment is expensive. Farms don't need to buy it — they need to <strong>rent</strong> it. A service model makes it affordable for everyone.
+            </div>
+        </div>
+
+        <div style="color:#888; font-size:0.85rem; border-top:1px solid #1a1a1a; padding-top:16px; margin-top:8px;">
+            💡 This is how you turn awareness into change. Sign the petition, share this page, and talk about it.
+        </div>
+    </div>
+
+    <!-- ===== Q&A SECTION ===== -->
     <div class="faq-section">
         <h2>❓ Q&amp;A</h2>
         <div class="faq-sub">Common questions about chick culling — answered.</div>
 
-        <!-- Q1: Why are male chicks killed? -->
         <div class="faq-item">
             <button class="faq-question">
                 Why are male chicks killed?
@@ -201,7 +280,6 @@
             <div class="faq-answer">They can't lay eggs, and they're not bred to grow fast enough for meat. The egg industry has no use for them, so they are culled as <strong>waste</strong>.</div>
         </div>
 
-        <!-- Q2: How are they killed? -->
         <div class="faq-item">
             <button class="faq-question">
                 How are they killed?
@@ -210,7 +288,6 @@
             <div class="faq-answer">Two main methods: <strong>maceration</strong> (high-speed grinding, considered instantaneous) and <strong>asphyxiation</strong> (CO₂ gas, slower and more controversial). Both are legal and widely used.</div>
         </div>
 
-        <!-- Q3: Is this legal in the US? -->
         <div class="faq-item">
             <button class="faq-question">
                 Is this legal in the US?
@@ -219,7 +296,6 @@
             <div class="faq-answer">Yes. The US has <strong>no federal ban</strong> on chick culling. Several European countries have banned it — France, Germany, and Italy are leading the shift — but the US still allows it at scale.</div>
         </div>
 
-        <!-- Q4: How many chicks are killed each year? -->
         <div class="faq-item">
             <button class="faq-question">
                 How many chicks are killed each year?
@@ -228,7 +304,6 @@
             <div class="faq-answer">Over <strong>300 million male chicks</strong> are culled annually in the US alone — about 34,000 per hour. Globally, the number exceeds <strong>6 billion</strong> per year.</div>
         </div>
 
-        <!-- Q5: What is in-ovo sexing? -->
         <div class="faq-item">
             <button class="faq-question">
                 What is in-ovo sexing?
@@ -237,7 +312,6 @@
             <div class="faq-answer">A technology that determines the sex of a chick <strong>before it hatches</strong> — within the egg (in-ovo). Male embryos are identified early and discarded before they develop consciousness, avoiding the hatching-and-killing cycle.</div>
         </div>
 
-        <!-- Q6: Does in-ovo sexing hurt the embryo? -->
         <div class="faq-item">
             <button class="faq-question">
                 Does in-ovo sexing hurt the embryo?
@@ -246,7 +320,6 @@
             <div class="faq-answer">It's done at day 8–13 of incubation. Scientific consensus is that embryos at this stage <strong>cannot feel pain</strong> (no functional nervous system). It's considered more humane than letting them hatch and be macerated or suffocated.</div>
         </div>
 
-        <!-- Q7: Why hasn't in-ovo sexing been fully adopted? -->
         <div class="faq-item">
             <button class="faq-question">
                 Why hasn't in-ovo sexing been fully adopted?
@@ -255,13 +328,12 @@
             <div class="faq-answer">Cost and scaling. The technology is newer and more expensive than traditional culling. But as it becomes cheaper — and as consumer pressure grows — the industry is beginning to shift. <strong>Change is accelerating.</strong></div>
         </div>
 
-        <!-- Q8: What can I do to help? -->
         <div class="faq-item">
             <button class="faq-question">
                 What can I do to help?
                 <span class="arrow">▾</span>
             </button>
-            <div class="faq-answer">Sign the petition above, share this page, and talk about it. Public pressure pushes companies to adopt in-ovo sexing faster. <strong>One minute, one click — you change their future.</strong></div>
+            <div class="faq-answer">Sign the petition above, share this page, and talk about it. Public pressure pushes companies to adopt in-ovo-sexing faster. <strong>One minute, one click — you change their future.</strong></div>
         </div>
     </div>
 
@@ -273,7 +345,7 @@
 </div>
 
 <script>
-    // Accordion logic: click to toggle, only one open at a time
+    // 手风琴逻辑：点击展开/收起，一次只开一个
     document.querySelectorAll('.faq-question').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             var item = this.closest('.faq-item');
